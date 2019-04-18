@@ -28,6 +28,7 @@ abstract class AbstractDao {
               databaseProperties.getPassword()
           );
       log.info("Prepared statement to {}: {}", databaseProperties.getUrl(), sql);
+
       return connection.prepareStatement(sql);
     } catch (SQLException | ClassNotFoundException e) {
       throw new GenericDatabaseException(e);

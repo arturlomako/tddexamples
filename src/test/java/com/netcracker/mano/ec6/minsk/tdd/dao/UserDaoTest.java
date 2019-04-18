@@ -12,11 +12,16 @@ import java.util.stream.Collectors;
 import lombok.SneakyThrows;
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.runners.MockitoJUnitRunner;
 
+
+@Ignore
+//Используем либо RunWith(MockitoJUnitRunner.class)
+//либо initMocks(this);
 @RunWith(MockitoJUnitRunner.class)
 public class UserDaoTest extends BaseDatabaseTest {
 
